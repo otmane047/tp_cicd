@@ -19,7 +19,12 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build Docker image
-      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/tp4-cicd:latest .
+      run: |
+        IMAGE=${{ secrets.DOCKER_USERNAME }}/tp4-cicd:latest
+        docker build -t $IMAGE .
+        echo "Built image $IMAGE"
 
     - name: Push image to Docker Hub
-      run: docker push ${{ secrets.DOCKER_USERNAME }}/tp4-cicd:latest
+      run: |
+        IMAGE=${{ secrets.DOCKER_USERNAME }}/tp4-cicd:latest
+        docker push $IMAGE
