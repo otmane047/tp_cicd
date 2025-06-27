@@ -2,6 +2,18 @@
 name: Python Tests
 on: [push]
 jobs:
+  lint:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - name: Set up Python
+          uses: actions/setup-python@v4
+          with:
+            python-version: '3.10'
+        - name: Install pylint
+          run: pip install pylint
+        - name: Run pylint
+          run: pylint simple_math.py test_simple_math.py
   test:
     runs-on: ubuntu-latest
     steps:

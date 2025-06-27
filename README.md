@@ -30,3 +30,6 @@ cat ~/.ssh/id_ed25519.pub
     * J'ai ajouté la méthode `subtract` dans la classe `SimpleMath` pour soustraire deux entiers.
     * J'ai modifié le fichier `test_simple_math.py` pour inclure des tests pour la méthode `subtract`.
 
+### 6: Ajout du linting avec pylint
+    * J'ai ajouté run step pour installer `pylint`.
+    * J'ai ajouter un lint Job dans `test.yml` pour exécuter `pylint` sur le code Python.
