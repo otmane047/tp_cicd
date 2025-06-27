@@ -1,5 +1,5 @@
-
 from unittest import TestCase
+
 from simple_math import SimpleMath
 
 
