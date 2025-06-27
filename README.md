@@ -37,3 +37,13 @@ cat ~/.ssh/id_ed25519.pub
 ### 7: Construction du conteneur Docker
     * J'ai créé un fichier `Dockerfile` pour construire une image Docker de l'application.
     * J'ai ajouté un job `build` dans le fichier `test.yml` pour construire l'image Docker.
+
+### 8: Publication de l'image Docker sur Docker Hub
+    * J'ai créé un fichier `.github/workflows/docker-publish.yml` pour publier l'image Docker sur Docker Hub.
+    * J'ai ajouté les secrets `DOCKER_USERNAME` et `DOCKER_PASSWORD` dans les paramètres du dépôt GitHub pour l'authentification Docker Hub.
+
+
+## Github repo final : 
+https://github.com/otmane047/tp_cicd
+## Docker Hub repo final :
+https://hub.docker.com/r/otmane047/tp4-cicd
