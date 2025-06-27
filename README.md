@@ -17,8 +17,11 @@ cat ~/.ssh/id_ed25519.pub
  
  ### 3. Créer deux classes python, SimpleMath et TestSimpleMath
 
+ * J'ai créé la classe `SimpleMath` dans le fichier `simple_math.py` avec une méthode `add` qui additionne deux entiers.
+ * J'ai créé la classe `TestSimpleMath` dans le fichier `test_simple_math.py` pour tester la méthode `add`.
+
+### 4. Workflow de tests unitaires
+
+ * J'ai ajouté un fichier `requirements.txt` avec les dépendances nécessaires, comme `unittest`.
  
-
-
- 
-
+* J'ai créé le fichier `.github/workflows/test.yml`
