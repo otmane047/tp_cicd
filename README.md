@@ -15,6 +15,10 @@ cat ~/.ssh/id_ed25519.pub
  * Compte Github : déja créé [Repo Github](https://github.com/otmane047/tp_cicd)
  * Créer un fichier `.github/workflows/github-actions-demo.yml` dans le repo
  
+ ### 3. Créer deux classes python, SimpleMath et TestSimpleMath
+
+ 
+
 
  
 
