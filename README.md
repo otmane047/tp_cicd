@@ -32,8 +32,8 @@ cat ~/.ssh/id_ed25519.pub
 
 ### 6: Ajout du linting avec pylint
     * J'ai ajouté run step pour installer `pylint`.
-    * J'ai ajouter un lint Job dans `test.yml` pour exécuter `pylint` sur le code Python.
+    * J'ai ajouter un `lint` Job dans `test.yml` pour exécuter `pylint` sur le code Python.
 
 ### 7: Construction du conteneur Docker
     * J'ai créé un fichier `Dockerfile` pour construire une image Docker de l'application.
-    * J'ai ajouté un job dans le fichier `test.yml` pour construire l'image Docker.
+    * J'ai ajouté un job `build` dans le fichier `test.yml` pour construire l'image Docker.
